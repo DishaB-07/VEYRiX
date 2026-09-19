@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0a131c;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+  
+  .font-display {
+    font-family: 'Chakra Petch', 'Inter', sans-serif;
+  }
+
+  .font-mono-cyber {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Calm, fresh smooth scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #081018;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(45, 212, 191, 0.28);
+  border-radius: 9999px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(45, 212, 191, 0.55);
+}
+
+/* Calm fresh grid pattern */
+.fresh-grid {
+  background-image: 
+    linear-gradient(to right, rgba(45, 212, 191, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.045) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Ambient calming radial glow */
+.calm-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(20, 184, 166, 0.14) 0%, rgba(56, 189, 248, 0.06) 45%, transparent 70%);
+}
+
+/* 3D Transform Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.translate-z-10 {
+  transform: translateZ(10px);
+}
+
+.translate-z-20 {
+  transform: translateZ(20px);
+}
+
+.translate-z-30 {
+  transform: translateZ(30px);
+}
+
+/* 3D Depth card elevation with fresh calm glow */
+.card-3d {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: translateY(-4px) translateZ(12px);
+  box-shadow: 0 20px 35px -10px rgba(13, 148, 136, 0.22), 0 0 22px -5px rgba(56, 189, 248, 0.18);
+  border-color: rgba(45, 212, 191, 0.35);
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulseCalm {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.04); }
+}
+
+@keyframes radarWave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-pulse-calm {
+  animation: pulseCalm 3.5s ease-in-out infinite;
+}
+
+.animate-radar {
+  animation: radarWave 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Accessible focus ring utility */
+.focus-ring {
+  outline: none;
+}
+.focus-ring:focus-visible {
+  outline: 2px solid #2dd4bf;
+  outline-offset: 2px;
+}
+
+/* Glassmorphism panel */
+.glass-panel {
+  background: rgba(10, 19, 28, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(45, 212, 191, 0.15);
+}
+
+.glass-panel-subtle {
+  background: rgba(15, 27, 38, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+

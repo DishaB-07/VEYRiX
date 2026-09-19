@@ -1,0 +1,10 @@
+{
+  "name": "Remix VEYRiX",
+  "description": "AI-Powered Real-Time Voice Cloning Detection \u0026 Impersonation Defense. SIH26104 solution for action-bound voice trust and anti-spoofing defense.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
