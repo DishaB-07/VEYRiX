@@ -427,22 +427,6 @@ VEYRiX addresses this by treating voice authenticity **together with the action 
 
 ---
 
-## 👥 Team
-
-| Name | Role |
-|---|---|
-| **Team Name** | *Add team name* |
-| [Disha B](https://github.com/DishaB-07) | *Add role* |
-| *Member 2* | *Add role* |
-| *Member 3* | *Add role* |
-| *Member 4* | *Add role* |
-| *Member 5* | *Add role* |
-| *Member 6* | *Add role* |
-
-**Mentor:** *Add mentor name*  ·  **Institution:** *Add institution*
-
----
-
 ## ⚠️ Disclaimer
 
 VEYRiX is a research and hackathon prototype. Its results are **security signals, not definitive proof of identity, authenticity or fraud**. For any request involving money, OTPs, passwords or account access, always verify the caller independently through a trusted channel.
